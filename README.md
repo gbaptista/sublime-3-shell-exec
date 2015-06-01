@@ -106,8 +106,8 @@ Shell Exec: Open `shell_exec_open`
     // Enable or Disable the Debug infos (for plugin developers).
     "debug": false,
 
-    // Name of the System Exec command box.
-    "title": "System Exec",
+    // Name of the Shell Exec command box.
+    "title": "Shell Exec",
 
     // Defines where the command should be executed: false, "project_folder", "file_folder"
     // If "project_folder" is set, will execute: cd project_folder && your_commnad.
@@ -131,7 +131,7 @@ Shell Exec: Open `shell_exec_open`
 }
 ```
 Available variables:
-* `${input}`: _Input from System Exec box._
+* `${input}`: _Input from Shell Exec box._
 * `${region}`: _Selected text._
 * `${row}`: _Selected row number or the cursor position at file._
 * `${file_name}`: _ShellExec.py_

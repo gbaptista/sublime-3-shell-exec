@@ -103,7 +103,7 @@ class ShellExec:
     if ShellExec.get_setting('debug', args):
         print('new Thread')
 
-    t = Thread(target=ShellExec.execute_system_command, args=(sublime_shell_source, command, pure_command, args))
+    t = Thread(target=ShellExec.execute_shell_command, args=(sublime_shell_source, command, pure_command, args))
     t.start()
 
   def new_output_file(args, pure_command):
@@ -139,7 +139,7 @@ class ShellExec:
         sublime.active_window().run_command('show_panel', {"panel": "console", "toggle": False})
       sys.stdout.write(value)
 
-  def execute_system_command(sublime_shell_source, command, pure_command, args, return_error=True):
+  def execute_shell_command(sublime_shell_source, command, pure_command, args, return_error=True):
     code = sublime_shell_source + "\n" + command
 
     shell_command_do_gui_instance = ShellExec()
