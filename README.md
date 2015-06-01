@@ -1,7 +1,10 @@
 # Shell Exec
 
 Run shell commands like git, rvm, rspec, ls, etc. with Bash, Zsh and others inside your Sublime Text 3.
- 
+
+![Demo: RSpec inside Sublime](https://raw.githubusercontent.com/gbaptista/sublime-3-shell-exec/master/demo.gif)
+
+
 * [Command Palette](#command-palette)
 * [Default Shortcuts](#default-shortcuts)
 * [Settings](#settings)
