@@ -5,7 +5,7 @@ Run shell commands inside Sublime Text 3.
 * [Default Shortcuts](#default-shortcuts)
 * [Settings](#settings)
 * [Custom Shortcuts](#custom-shortcuts)
-* [Command Format Syntax](#command-format-syntax)
+  - [Command Format Syntax](#command-format-syntax)
 * [Common Problems](#common-problems)
   - [RVM Command, ~/.bashrc, ~/.bash_profile, ~/.zshrc...](#rvm-command-bashrc-bash_profile-zshrc)
   - [Debugging](#debugging)
@@ -112,7 +112,7 @@ Shell Exec: Open `shell_exec_open`
 }
 ```
 
-### Command Format Syntax
+#### Command Format Syntax
 ```javascript
 // (ctrl+shift+c+f) key binding
 "keys": ["ctrl+shift+c", "ctrl+shift+f"],
