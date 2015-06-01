@@ -1,6 +1,17 @@
 # Shell Exec
 
 Run shell commands inside Sublime Text 3.
+* [Command Palette](#command-palette)
+* [Settings](#settings)
+* [Custom Shortcuts](custom-shortcuts)
+* [Command Format Syntax](command-format-syntax)
+* [Common Problems](common-problems)
+  - [RVM Command, ~/.bashrc, ~/.bash_profile, ~/.zshrc...](rvm-command-bashrc-bash_profile-zshrc)
+  - [Debugging](debugging)
+* [Some Cool Demos](some-cool-demos)
+  - [Git](git)
+  - [RSpec](rspec)
+  - [Unix](unix)
 
 ### Command Palette
 
@@ -165,7 +176,7 @@ Just enable the debug to see panel outputs:
 "shell_exec_debug": true,
 ```
 
-### Some cool demos:
+### Some Cool Demos
 #### Git
 ```javascript
 {
