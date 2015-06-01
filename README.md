@@ -52,8 +52,8 @@ Shell Exec: Open `shell_exec_open`
 // Enable or Disable the Debug infos (for plugin developers).
 "shell_exec_debug": false,
 
-// Name of the System Exec command box.
-"shell_exec_title": "System Exec",
+// Name of the Shell Exec command box.
+"shell_exec_title": "Shell Exec",
 
 // Defines where the command should be executed: false, "project_folder", "file_folder"
 // If "project_folder" is set, will execute: cd project_folder && your_commnad.
