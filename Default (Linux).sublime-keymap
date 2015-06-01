@@ -1,0 +1,3 @@
+[
+  { "keys": ["ctrl+shift+c"], "command": "shell_exec_open" }
+]

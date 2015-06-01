@@ -1,0 +1,29 @@
+{
+  // You can use this file to load RVM, ~/.bashrc, custom shell functions...
+  // "shell_exec_load_sh_file": "your-sh-file-to-load-before-commands.sh",
+
+  // Shell executable: "/bin/bash", "/bin/sh", "/usr/bin/zsh"...
+  "shell_exec_executable": "/bin/bash",
+
+  // Shell executable option: --login # Run as login load your ~/.bashrc or other user settings.
+  "shell_exec_executable_option": "--login", // ["-l"] ["--login"]
+
+  // The output of the command can be shown on the Panel or in a New File: "panel", "file".
+  "shell_exec_output": "file",
+
+  // Set the Output File Syntax. Default is Ruby, because Ruby looks nice. =)
+  "shell_exec_output_syntax": "Ruby",
+
+  // Enable or Disable the  word wrap at the Output File.
+  "shell_exec_output_word_wrap": true,
+
+  // Enable or Disable the Debug infos (for plugin developers).
+  "shell_exec_debug": false,
+
+  // Name of the Shell Exec command box.
+  "shell_exec_title": "Shell Exec",
+
+  // Defines where the command should be executed: false, "project_folder", "file_folder"
+  // If "project_folder" is set, will execute: cd project_folder && your_commnad.
+  "shell_exec_context": "project_folder"
+}
