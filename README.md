@@ -2,16 +2,17 @@
 
 Run shell commands inside Sublime Text 3.
 * [Command Palette](#command-palette)
+* [Default Shortcuts](#default-shortcuts)
 * [Settings](#settings)
-* [Custom Shortcuts](custom-shortcuts)
-* [Command Format Syntax](command-format-syntax)
-* [Common Problems](common-problems)
-  - [RVM Command, ~/.bashrc, ~/.bash_profile, ~/.zshrc...](rvm-command-bashrc-bash_profile-zshrc)
-  - [Debugging](debugging)
-* [Some Cool Demos](some-cool-demos)
-  - [Git](git)
-  - [RSpec](rspec)
-  - [Unix](unix)
+* [Custom Shortcuts](#custom-shortcuts)
+* [Command Format Syntax](#command-format-syntax)
+* [Common Problems](#common-problems)
+  - [RVM Command, ~/.bashrc, ~/.bash_profile, ~/.zshrc...](#rvm-command-bashrc-bash_profile-zshrc)
+  - [Debugging](#debugging)
+* [Some Cool Demos](#some-cool-demos)
+  - [Git](#git)
+  - [RSpec](#rspec)
+  - [Unix](#unix)
 
 ### Command Palette
 
