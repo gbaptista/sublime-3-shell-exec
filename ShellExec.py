@@ -77,9 +77,11 @@ class ShellExec:
 
   def run_shell_command(args, view, command):
     command = ShellExec.command_variables(args, view, command)
-
     if 'folder' in sublime.active_window().extract_variables():
-      pure_command = command.replace(sublime.active_window().extract_variables()['folder'] + '/', '')
+      if sublime.platform() == 'windows':
+        pure_command = command.replace(sublime.active_window().extract_variables()['folder'] + '\\', '')
+      else:
+        pure_command = command.replace(sublime.active_window().extract_variables()['folder'] + '/', '')
     else:
       pure_command = command
 
