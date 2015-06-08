@@ -206,17 +206,17 @@ Just enable the debug to see panel outputs:
 {
   "keys": ["ctrl+shift+g", "ctrl+shift+d", "ctrl+shift+a"],
   "command": "shell_exec_run",
-  "args": { "command": "git diff" }
+  "args": { "command": "git diff", "output_syntax": "Diff" }
 },
 {
   "keys": ["ctrl+shift+g", "ctrl+shift+d", "ctrl+shift+f"],
   "command": "shell_exec_run",
-  "args": { "command": "git diff ${file}" }
+  "args": { "command": "git diff '${file}'", "output_syntax": "Diff" }
 },
 {
   "keys": ["ctrl+shift+g", "ctrl+shift+b"],
   "command": "shell_exec_run",
-  "args": { "command": "git blame ${file}" }
+  "args": { "command": "git blame '${file}'", "output_syntax": "Git Blame" }
 }
 ```
 
@@ -246,17 +246,17 @@ Just enable the debug to see panel outputs:
 {
   "keys": ["ctrl+shift+r", "ctrl+shift+f"],
   "command": "shell_exec_run",
-  "args": { "command": "rspec ${file} --require spec_helper" }
+  "args": { "command": "rspec '${file}' --require spec_helper" }
 },
 {
   "keys": ["ctrl+shift+r", "ctrl+shift+l"],
   "command": "shell_exec_run",
-  "args": { "command": "rspec ${file}:${row} --require spec_helper" }
+  "args": { "command": "rspec '${file}:${row}' --require spec_helper" }
 },
 {
   "keys": ["ctrl+shift+r", "ctrl+shift+s"],
   "command": "shell_exec_run",
-  "args": { "command": "rspec ${region} --require spec_helper" }
+  "args": { "command": "rspec '${region}' --require spec_helper" }
 }
 ```
 
