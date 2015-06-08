@@ -127,7 +127,7 @@ Shell Exec: Open `shell_exec_open`
 
 "args": {
     // Format the command with variables.
-    "format": "rspec ${file_name}:${row}"
+    "format": "rspec '${file}:${row}'"
 }
 ```
 Available variables:
@@ -195,7 +195,7 @@ Just enable the debug to see panel outputs:
   "args": {
     "title": "Git Checkout:",
     "format": "git checkout ${input}",
-    "command": "${file_name}"
+    "command": "'${file}'"
   }
 },
 {
@@ -234,7 +234,7 @@ Just enable the debug to see panel outputs:
   "command": "shell_exec_open",
   "args": {
     "title": "RSpec Command:",
-    "command": "${file}:${row}",
+    "command": "'${file}:${row}'",
     "format": "rspec ${input} --require spec_helper"
   }
 },
