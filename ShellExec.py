@@ -158,11 +158,11 @@ class ShellExec:
     if ShellExec.get_setting('executable_option', args):
       if ShellExec.get_setting('debug', args):
         print('create Popen: executable=' + ShellExec.get_setting('executable', args) + ' ' + ShellExec.get_setting('executable_option', args))
-      console_command = Popen([ShellExec.get_setting('executable', args), ShellExec.get_setting('executable_option', args), '-c', code], shell=False, close_fds=True, stderr=stderr, stdout=PIPE)
+      console_command = Popen([ShellExec.get_setting('executable', args), ShellExec.get_setting('executable_option', args), '-c', code], shell=False, stderr=stderr, stdout=PIPE)
     else:
       if ShellExec.get_setting('debug', args):
         print('create Popen: executable=' + ShellExec.get_setting('executable', args))
-      console_command = Popen(code, executable=ShellExec.get_setting('executable', args), shell=True, close_fds=True, stderr=stderr, stdout=PIPE)
+      console_command = Popen(code, executable=ShellExec.get_setting('executable', args), shell=True, stderr=stderr, stdout=PIPE)
 
     if ShellExec.get_setting('debug', args):
       print('waiting for stdout...')
