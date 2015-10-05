@@ -90,7 +90,7 @@ class ShellExec:
         command = "cd '" + sublime.active_window().extract_variables()['folder'] + "' && " + command
     if ShellExec.get_setting('context', args) == 'file_folder':
       if 'file_path' in sublime.active_window().extract_variables():
-        command = "cd " + sublime.active_window().extract_variables()['file_path'] + " && " + command
+        command = "cd '" + sublime.active_window().extract_variables()['file_path'] + "' && " + command
 
     sublime_shell_source = ''
 
