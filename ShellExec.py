@@ -135,11 +135,14 @@ class ShellExec:
         self.output_file = ShellExec.new_output_file(args, pure_command)
 
       self.output_file.run_command('shell_exec_view_insert', {'pos': self.output_file.size(), 'text': value})
+    elif ShellExec.get_setting('output', args) == "none":
+      self.panel_output = False
     else:
       if not self.panel_output:
         self.panel_output = True
         sublime.active_window().run_command('show_panel', {"panel": "console", "toggle": False})
       sys.stdout.write(value)
+		
 
   def execute_shell_command(sublime_shell_source, command, pure_command, args, return_error=True):
     code = sublime_shell_source + "\n" + command
