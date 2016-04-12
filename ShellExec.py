@@ -112,7 +112,7 @@ class ShellExec:
     if ShellExec.get_setting('debug', args):
       print('open new empty file: ' + pure_command)
     output_file = sublime.active_window().new_file()
-    output_file.set_name(pure_command)
+    output_file.set_name(pure_command[0:60])
     output_file.set_scratch(True)
 
     if ShellExec.get_setting('output_syntax', args):
@@ -206,7 +206,7 @@ class ShellExec:
     if ShellExec.get_setting('debug', args):
       print(">>>>>>>>>>>>>>>>>> Shell Exec Debug Finished!")
 
-    sublime.status_message('Shell Exec | Done!')
+    sublime.status_message('Shell Exec | Done! > ' + pure_command[0:60])
 
   def get_setting(config, args, force_default=False):
     if (not force_default) and args.get(config):
