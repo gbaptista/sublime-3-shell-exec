@@ -8,7 +8,7 @@
   // Shell executable option: --login # Run as login load your ~/.bashrc or other user settings.
   "shell_exec_executable_option": "--login", // ["-l"] ["--login"]
 
-  // The output of the command can be shown on the Panel or in a New File: "panel", "file".
+  // The output of the command can be shown on the Panel or in a New File: "panel", "file" or "none".
   "shell_exec_output": "file",
 
   // Set the Output File Syntax. Default is Ruby, because Ruby looks nice. =)
@@ -23,7 +23,7 @@
   // Name of the Shell Exec command box.
   "shell_exec_title": "Shell Exec",
 
-  // Defines where the command should be executed: false, "project_folder", "file_folder"
+  // Defines where the command should be executed: false, "project_folder" or "file_folder".
   // If "project_folder" is set, will execute: cd project_folder && your_commnad.
   "shell_exec_context": "project_folder"
 }
