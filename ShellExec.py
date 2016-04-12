@@ -135,6 +135,8 @@ class ShellExec:
         self.output_file = ShellExec.new_output_file(args, pure_command)
 
       self.output_file.run_command('shell_exec_view_insert', {'pos': self.output_file.size(), 'text': value})
+    elif ShellExec.get_setting('output', args) == "none":
+      self.panel_output = False
     else:
       if not self.panel_output:
         self.panel_output = True
